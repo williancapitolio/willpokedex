@@ -4,7 +4,7 @@ import { Col, Row } from "react-bootstrap";
 import { PokemonCard } from "../components/PokemonCard";
 
 export const HomePage = () => {
-    const [pokemom, setPokemon] = useState([]);
+    const [pokemon, setPokemon] = useState([]);
     const [loading, setLoading] = useState(true);
 
     const getPokemonList = async () => {
@@ -18,7 +18,7 @@ export const HomePage = () => {
     };
 
     const getPokemonData = async (id) => {
-        const res = await api.get(`/pokemons/${id}`);
+        const res = await api.get(`pokemon/${id}`);
         return res;
     };
 
@@ -34,7 +34,7 @@ export const HomePage = () => {
                 <Row>
                     {pokemon.map(p => (
                         <Col key={p.data.name} xs={12} sm={12} md={4} lg={4} xl={4}>
-                            <PokemonCard pokemom={p.data} />
+                            <PokemonCard pokemon={p.data} />
                         </Col>
                     ))}
                 </Row>
