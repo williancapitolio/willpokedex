@@ -1,7 +1,13 @@
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Container } from "react-bootstrap";
+import { HomePage } from "./pages/HomePage";
+
 export const App = () => {
-    return(
-        <>
-        <h1>Hello</h1>
-        </>
+    return (
+        <Router>
+            <Container>
+                <HomePage />
+            </Container>
+        </Router>
     );
 };
