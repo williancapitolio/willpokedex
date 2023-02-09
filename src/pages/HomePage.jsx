@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { api } from "../services/Api";
 import { Col, Row } from "react-bootstrap";
 import { PokemonCard } from "../components/PokemonCard";
+import { Loader } from "../components/Loader";
 
 export const HomePage = () => {
     const [pokemon, setPokemon] = useState([]);
@@ -29,11 +30,18 @@ export const HomePage = () => {
     return (
         <>
             {loading ? (
-                <h1>Loading...</h1>
+                <Loader />
             ) : (
                 <Row>
                     {pokemon.map(p => (
-                        <Col key={p.data.name} xs={12} sm={12} md={4} lg={4} xl={4}>
+                        <Col
+                            key={p.data.name}
+                            xs={12}
+                            sm={12}
+                            md={4}
+                            lg={4}
+                            xl={4}
+                        >
                             <PokemonCard pokemon={p.data} />
                         </Col>
                     ))}
