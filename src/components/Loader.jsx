@@ -4,7 +4,13 @@ export const Loader = () => {
     return (
         <div
             className="d-flex justify-content-center pt-3 align-items-center"
-            style={{ height: "100vh" }}
+            style={
+                {
+                    height: "100vh",
+                    overflow: "hidden",
+                    margin: "-56px 0 0 0"
+                }
+            }
         >
             <Row>
                 <Col>
@@ -24,11 +30,11 @@ export const Loader = () => {
             </Row>
             <Row>
                 <Col>
-                        <div
-                            className="mx-3"
-                        >
-                            Buscando Pokémons...
-                        </div>
+                    <div
+                        className="mx-3"
+                    >
+                        Buscando Pokémons...
+                    </div>
                 </Col>
             </Row>
         </div>

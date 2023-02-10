@@ -19,7 +19,6 @@
     color: rgb(227, 227, 227);
 }
 
-/* Extra Background Colors */
 .grass {
     background-color: rgb(38, 235, 90);
 }
@@ -47,6 +46,7 @@
 .poison {
     background-color: rgb(176, 38, 235);
 }
+
 .ground {
     background-color: rgb(181, 131, 92);
 }
