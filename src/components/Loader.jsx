@@ -3,12 +3,12 @@ import { Row, Col, Spinner } from "react-bootstrap";
 export const Loader = () => {
     return (
         <div
-            className="d-flex justify-content-center pt-3 align-items-center"
+            className="d-flex justify-content-center align-items-center"
             style={
                 {
                     height: "100vh",
                     overflow: "hidden",
-                    margin: "-56px 0 0 0"
+                    margin: "-60px 0 -60px 0"
                 }
             }
         >
