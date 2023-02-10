@@ -19,6 +19,16 @@
     color: rgb(227, 227, 227);
 }
 
+.link-footer {
+    text-decoration: none;
+    color: white;
+}
+
+.link-footer:hover {
+    cursor: pointer;
+    color: rgb(227, 227, 227);
+}
+
 .grass {
     background-color: rgb(38, 235, 90);
 }

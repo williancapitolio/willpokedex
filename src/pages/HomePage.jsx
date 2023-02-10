@@ -13,7 +13,6 @@ export const HomePage = () => {
         for (let i = 1; i <= 151; i++) {
             pokemonArray.push(await getPokemonData(i));
         }
-        console.log(pokemonArray);
         setPokemon(pokemonArray);
         setLoading(false);
     };

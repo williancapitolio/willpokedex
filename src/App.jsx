@@ -3,6 +3,7 @@ import { Container } from "react-bootstrap";
 import { HomePage } from "./pages/HomePage";
 import { PokemonPage } from "./pages/PokemonPage";
 import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 
 export const App = () => {
     return (
@@ -14,6 +15,7 @@ export const App = () => {
                     <Route path="/pokemon/:id" element={<PokemonPage />} />
                 </Routes>
             </Container>
+            <Footer />
         </Router>
     );
 };
