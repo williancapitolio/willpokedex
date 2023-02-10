@@ -5,7 +5,7 @@ export const PokemonCard = ({ pokemon }) => {
     return (
         <>
             <Card
-                className="my-3 p-3 rounded text-center shadow mb-5 bg-white"
+                className="my-3 p-3 rounded text-center shadow bg-white"
                 style={
                     { border: "none" }
                 }

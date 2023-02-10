@@ -39,7 +39,7 @@ export const PokemonPage = () => {
                         xl={12}
                     >
                         <Card
-                            className="my-3 p-3 rounded text-center shadow p-3 mb-5 bg-white"
+                            className="my-3 p-3 rounded text-center shadow bg-white"
                             style={
                                 { border: "none" }
                             }
@@ -81,7 +81,7 @@ export const PokemonPage = () => {
                         xl={12}
                     >
                         <Card
-                            className="p-3 rounded text-center shadow p-3 mb-5 bg-white"
+                            className="my-3 p-3 rounded text-center shadow bg-white"
                             style={
                                 { border: "none" }
                             }
